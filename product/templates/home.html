@@ -1,0 +1,434 @@
+{% load static from static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Sayfs Bukhara</title>
+</head>
+
+<body>
+    <section class="is-fullheight">
+        <header class="navbar is-info" style="height: 60px;">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="{% static 'images/logo.png' %}" alt="Logo">
+                    </a>
+                    <span class="navbar-burger" onClick="toggleBurger()" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+
+                        <div class="select" class="navbar-item" style="margin:10px auto auto;width: 150px;">
+                            <select type="text">
+                                <option value="0" selected>Продукция</option>
+                                <option value="1">Металлические изделия</option>
+                                <a href="#">
+                                    <option value="2"> Медицинское оборудование </option>
+                                </a>
+                                <a href="#">
+                                    <option value="3"> Мебель для лабораторий </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Мебель для детских садов </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Мебель для учебных заведений </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Изделия из стеклопластика </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Спортивное оборудование </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Офисная мебель</option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Воркауты </option>
+                                </a>
+                            </select>
+                        </div>
+
+                        <a class="navbar-item has-text-dark">
+                            Контакты
+                        </a>
+                        <a class="navbar-item has-text-dark" href="{% url 'product:about_us' %}">
+                            О нас
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <hr>
+
+        <section class="section">
+            <div class="container ">
+                <div class="columns">
+
+                    <div class="column" style="margin: 210px auto auto;font-size: 40px;"> СОЧЕТАЯ ОПЫТ И СОВРЕМЕННЫЕ
+                        ТЕХНОЛОГИИ</div>
+
+                    <div class="column">
+
+                        <div class="image">
+                            <img src="{% static 'images/contact.png' %} " alt="Logo">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column"></div>
+                <div class="column">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/uetqnvvg.json"
+                        trigger="loop"
+                        colors="primary:#107c91,secondary:#107c91"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                    <div class="subtitle mt-3">Быстрая доставка</div>
+                </div>
+                <div class="column"></div>
+                <div class="column">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/ssdupzsv.json"
+                        trigger="loop"
+                        colors="primary:#107c91,secondary:#107c91"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                    <div class="subtitle has-text-centered">Хорошие отзывы</div>
+                </div>
+                <div class="column"></div>
+                <div class="column mb-2">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/qhviklyi.json"
+                        trigger="loop"
+                        colors="primary:#107c91,secondary:#107c91"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                    <div class="subtitle">Хорошие цены</div>
+                </div>
+                <div class="column"></div>
+                <div class="column mb-2">
+                    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                    <lord-icon
+                        src="https://cdn.lordicon.com/yyecauzv.json"
+                        trigger="loop"
+                        colors="primary:#107c91,secondary:#107c91"
+                        style="width:100px;height:100px">
+                    </lord-icon>
+                    <div class="subtitle mt-1">Гарантия</div>
+                </div>
+                <div class="column"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <br>
+    
+    <div class="columns">
+        <div class="column mx-6">
+            <div>
+                <img src="{% static 'images/g.png' %}" alt="Logo">
+            </div>
+        </div>
+        <div class="column">
+
+            <div>
+                <img src="{% static 'images/g1.png' %}" alt="Logo">
+            </div>
+
+        </div>
+        <div class="column">
+            <div>
+                <img src="{% static 'images/g2.png' %}" alt="Logo">
+            </div>
+        </div>
+        <div class="column">
+
+
+            <div>
+                <img src="{% static 'images/g3.png' %}" alt="Logo">
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <img src="{% static 'images/g4.png' %}" alt="Logo">
+            </div>
+        </div>
+
+        <div class="column">
+            <div style="display: inline;">
+                <img src="{% static 'images/g5.png' %}" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="columns ">
+
+        <div class="column has-text-centered mt-6">
+            <div class="title" style="font-size:60px;">
+                Сейф
+            </div>
+            <div class="subtitle mt-6" style="font-size:30px;">
+                Размер : 80x60 
+                <br>
+                Вес : 28кг
+                <br>
+                Преимущества : огнеупорность
+                <br>
+                Гарантия : 5 лет
+            </div>
+            <div class="button has-background-info is-rounded  mt-3" style="width: 200px; height: 70px;">
+                <a href="https://t.me/hudojnik_ot_ZEBRY" class="has-text-white">Купить</a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="{% static 'images/card3.png' %}"  alt="Logo">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="columns ">
+        <div class="column has-text-centered">
+            <img src="{% static 'images/card4.png' %}" alt="Logo">
+        </div>
+
+        <div class="column mx-3 has-text-centered">
+            <div class="title" style="font-size:60px;">
+               Электронный-Сейф
+            </div>
+            <div class="subtitle mt-6" style="font-size:30px;">
+                Размер : 30x40 
+                <br>
+                Вес : 35кг
+                <br>
+                Преимущества : огнеупорность
+                <br>
+                Гарантия : 3 года
+            </div>
+      
+            <div class="button has-background-info is-rounded  mt-3" style="width: 200px; height: 70px;">
+                <a href="https://t.me/hudojnik_ot_ZEBRY" class="has-text-white">Купить</a>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="columns ">
+
+        <div class="column mx-3 has-text-centered">
+            <div class="title" style="font-size:60px;">
+               Скамейка
+            </div>
+            <div class="subtitle mt-6" style="font-size:30px;">
+                Размер : 50x40 
+                <br>
+                Вес : 45кг
+                <br>
+                Гарантия : 2 года
+            </div>
+      
+            <div class="button has-background-info is-rounded  mt-3" style="width: 200px; height: 70px;">
+                <a href="https://t.me/hudojnik_ot_ZEBRY" class="has-text-white">Купить</a>
+            </div>
+        </div>
+        <div class="column has-text-centered">
+            <img src="{% static 'images/g6.png' %}" alt="Logo">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="columns ">
+        <div class="column has-text-centered">
+            <img src="{% static 'images/g10.png' %}" alt="Logo">
+        </div>
+
+        <div class="column mx-3 has-text-centered">
+            <div class="title" style="font-size:60px;">
+               Бассейн
+            </div>
+            <div class="subtitle mt-6" style="font-size:30px;">
+                Размер : 50x40 
+                <br>
+                Вес : 60кг
+                <br>
+                Гарантия : 2 года
+            </div>
+      
+            <div class="button has-background-info is-rounded  mt-3" style="width: 200px; height: 70px;">
+                <a href="https://t.me/hudojnik_ot_ZEBRY" class="has-text-white">Купить</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="columns ">
+
+    
+
+        <div class="column mx-3 has-text-centered">
+            <div class="title" style="font-size:60px;">
+               Комплектный стол
+            </div>
+            <div class="subtitle mt-6" style="font-size:30px;">
+                Размер : 50x40 
+                <br>
+                Вес : 45кг
+                <br>
+                Гарантия : 2 года
+            </div>
+      
+            <div class="button has-background-info is-rounded  mt-3" style="width: 200px; height: 70px;">
+                <a href="https://t.me/hudojnik_ot_ZEBRY" class="has-text-white">Купить</a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="{% static 'images/g11.png' %}" alt="Logo">
+        </div>
+    </div>
+    <br>
+    <div class="title has-text-centered mt-6">Our pieces inside your home</div>
+    <div class="subtitle mt-4 has-text-centered">Get inspired by our products in real-life. Tag us and be featured!
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="columns  ">
+                <div class="column">
+
+                    <img src="{% static 'images/img1.svg' %}" alt="Logo">
+
+                </div>
+                <div class="column">
+
+
+                    <img src="{% static 'images/img2.svg' %}" alt="Logo">
+
+
+                </div>
+                <div class="column">
+
+                    <img src="{% static 'images/img3.svg' %}" alt="Logo">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="subtitle has-text-centered"><i>"The team from Woodendot has displayed utmost professionalism
+                    from order to deliver and customer support. We placed an order to the UK and would definitely
+                    recommend friends to order from Woodendot!"</i></div>
+            <div class="subtitle has-text-centered mt-5"><i> R. Aoun, United Kingdom </i> </div>
+        </div>  
+    </section>
+    <section class="section has-background-info">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-3 mx-3">
+                    <figure class="image">
+                        <img src="{% static 'images/logo.png' %}" alt="Logo">
+                    </figure>
+                    <div class="subtitle has-text-white">
+                    
+                        <br>
+                        © <a href="https://t.me/ustechcompany" class="has-text-white"> USTECH  </a> All rights reserved
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title has-text-white">Company</div>
+                    <div class="subtitle">
+                        <br>
+                        <a href="#" class="has-text-white">About</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Testimonials</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Portfolio</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Services</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title has-text-white">Help</div>
+                    <div class="subtitle">
+                        <br>
+                        <a href="#" class="has-text-white">About</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Testimonials</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Portfolio</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Services</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="title has-text-white">Контакты</div>
+                    <div class="subtitle">
+                        <br>
+                        <a href="#" class="has-text-white">+ 1 320 320 20 20</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">info@mondaylabs.tech</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">Farmdale Ave 159,</a>
+                        <br>
+                        <br>
+                        <a href="#" class="has-text-white">г.Бухара , Узбекистан</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let toggleBurger = () => {
+            document.querySelector('.navbar-menu').classList.toggle('is-active')
+            document.querySelector('.navbar-burger').classList.toggle('is-active')
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+{% load static from static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Sayfs Bukhara</title>
+</head>
+
+<body>
+    <section class="is-white is-fullheight">
+
+        <header class="navbar is-info" style="height: 60px;">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <img src="{% static 'images/logo.png' %}" alt="Logo">
+                    </a>
+                    <span class="navbar-burger" onClick="toggleBurger()" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+
+                        <div class="select" class="navbar-item" style="margin:10px auto auto;width: 150px;">
+                            <select type="text">
+                                <option value="0" selected>Продукция</option>
+                                <option value="1">Металлические изделия</option>
+                                <a href="#">
+                                    <option value="2"> Медицинское оборудование </option>
+                                </a>
+                                <a href="#">
+                                    <option value="3"> Мебель для лабораторий </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Мебель для детских садов </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Мебель для учебных заведений </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Изделия из стеклопластика </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Спортивное оборудование </option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Офисная мебель</option>
+                                </a>
+                                <a href="#">
+                                    <option value="4"> Воркауты </option>
+                                </a>
+                            </select>
+                        </div>
+
+                        <a class="navbar-item has-text-dark">
+                            Контакты
+                        </a>
+                        <a class="navbar-item has-text-dark" href="{% url 'product:about_us' %}">
+                            О нас
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <hr>
+   
+        <section class="section">
+            <div class="container ">
+                <div class="columns">
+                 
+                    <div class="column" style="margin: 210px auto auto;"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus placeat earum inventore in saepe officia repudiandae magni nisi, veniam nostrum, repellat debitis ut ea ullam est atque beatae soluta id repellendus eveniet molestiae enim eum natus. Nemo corporis aperiam autem. At ipsam odio deserunt omnis nesciunt itaque asperiores voluptatem sit?  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolores quibusdam consequuntur corrupti enim excepturi!</div>
+                
+                    <div class="column">
+                      
+                        <div class="image">
+                            <img src="{% static 'images/contact.png' %} "alt="Logo">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+</section>
+
+<script>
+    let toggleBurger = () => {
+        document.querySelector('.navbar-menu').classList.toggle('is-active')
+        document.querySelector('.navbar-burger').classList.toggle('is-active')
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(link.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    
+</script>
+</body>
+
+</html>
